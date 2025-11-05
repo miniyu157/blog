@@ -4,6 +4,6 @@ draft = true
 title = '测试的文章, 只有一张图片'
 +++
 
-![img](images/ssh.png)
+![img](ssh.png)
 
 如果没看见就是哪里出问题了
