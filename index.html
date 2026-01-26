@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yumeka's Blog</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-        h1 { border-bottom: 1px solid #eaeaea; padding-bottom: 10px; }
+        body {
+            font-family: sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .title-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .kiss-me {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .kiss-me a {
+            transition: opacity 0.2s;
+        }
+
+        .kiss-me a:hover {
+            opacity: 0.7;
+        }
     </style>
 </head>
+
 <body>
-    <h1>Hello, Yumeka.</h1>
-    <p>This is the beginning of the digital garden.</p>
+    <div>
+        <div class="title-box">
+            <h1>竟然找到了这里...</h1>
+
+            <div class="kiss-me">
+                <a href="https://github.com/miniyu157" title="GitHub" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/github" width="24" height="24" alt="GitHub">
+                </a>
+                <a href="https://x.com/YMKxxxxxxxx" title="X" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/x" width="24" height="24" alt="X">
+                </a>
+                <a href="javascript:alert('QQ: 1979287894')" title="QQ">
+                    <img src="https://cdn.simpleicons.org/qq" width="24" height="24" alt="QQ">
+                </a>
+                <a href="mailto:yumeka.love9@gmail.com" title="Mail">
+                    <img src="https://cdn.simpleicons.org/gmail" width="24" height="24" alt="Mail">
+                </a>
+                <a href="https://y.music.163.com/m/user?id=4032263891" title="网易云音乐" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/neteasecloudmusic" width="24" height="24" alt="NetEase Music">
+                </a>
+                <a href="https://t.me/KlxPiao" title="telegram" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn.simpleicons.org/telegram" width="24" height="24" alt="Telegram">
+                </a>
+            </div>
+        </div>
+        <p>这里是梦花 <s>魔法少女梦花酱</s> 在宏大宇宙中构建的一个小角落, 不过如你所见, 这里什么都没有</p>
+        <p>可能会放一些文章或者心得, 还是分享些日常?</p>
+        <p>在那之前我要找到一个趁手的博客框架才行, 但是魔法少女也是有选择困难症的 www</p>
+        <p>以及, 我不会 HTML ...</p>
+    </div>
+
+    <h2>传送门</h2>
+    <a href="https://yumeka.blog/">稍微了解一下我</a>
+
+    <h2>留言板</h2>
+    <script src="https://giscus.app/client.js" data-repo="miniyu157/blog" data-repo-id="R_kgDORBQiyQ"
+        data-category="Announcements" data-category-id="DIC_kwDORBQiyc4C1bxr" data-mapping="pathname" data-strict="0"
+        data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
+        data-theme="preferred_color_scheme" data-lang="zh-CN" crossorigin="anonymous" async>
+        </script>
 </body>
+
 </html>
