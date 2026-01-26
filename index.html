@@ -7,16 +7,37 @@
     <link rel="canonical" href="https://sudo.yumeka.blog/">
     <title>Yumeka's Blog</title>
     <style>
+        :root {
+            --bg: #ffffff;
+            --text: #333333;
+            --link: #007acc;
+            --border: #eaeaea;
+            --icon-filter: none;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --text: #e0e0e0;
+                --link: #4db8ff;
+                --border: #333333;
+                --icon-filter: invert(1);
+            }
+        }
+
         body {
+            background-color: var(--bg);
+            color: var(--text);
             font-family: sans-serif;
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
             line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
         }
 
         a {
-            color: #007acc;
+            color: var(--link);
             text-decoration: none;
         }
 
@@ -26,10 +47,15 @@
 
         .title-box {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
             padding-bottom: 10px;
-            border-bottom: 1px solid #eaeaea;
+            border-bottom: 1px solid var(--border);
+
+            h1 {
+                margin-bottom: 10px;
+            }
         }
 
         .kiss-me {
@@ -45,6 +71,18 @@
         .kiss-me a:hover {
             opacity: 0.7;
         }
+
+        .kiss-me img {
+            filter: var(--icon-filter);
+        }
+
+        @media (max-width: 600px) {
+            .title-box {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -55,23 +93,23 @@
 
             <div class="kiss-me">
                 <a href="https://github.com/miniyu157" title="GitHub" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.simpleicons.org/github" width="24" height="24" alt="GitHub">
+                    <img src="https://cdn.simpleicons.org/github/black" width="24" height="24" alt="GitHub">
                 </a>
                 <a href="https://x.com/YMKxxxxxxxx" title="X" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.simpleicons.org/x" width="24" height="24" alt="X">
+                    <img src="https://cdn.simpleicons.org/x/black" width="24" height="24" alt="X">
                 </a>
                 <a href="javascript:alert('QQ: 1979287894')" title="QQ">
-                    <img src="https://cdn.simpleicons.org/qq" width="24" height="24" alt="QQ">
+                    <img src="https://cdn.simpleicons.org/qq/black" width="24" height="24" alt="QQ">
                 </a>
                 <a href="mailto:yumeka.love9@gmail.com" title="Mail">
-                    <img src="https://cdn.simpleicons.org/gmail" width="24" height="24" alt="Mail">
+                    <img src="https://cdn.simpleicons.org/gmail/black" width="24" height="24" alt="Mail">
                 </a>
                 <a href="https://y.music.163.com/m/user?id=4032263891" title="网易云音乐" target="_blank"
                     rel="noopener noreferrer">
-                    <img src="https://cdn.simpleicons.org/neteasecloudmusic" width="24" height="24" alt="NetEase Music">
+                    <img src="https://cdn.simpleicons.org/neteasecloudmusic/black" width="24" height="24" alt="NetEase Music">
                 </a>
                 <a href="https://t.me/KlxPiao" title="telegram" target="_blank" rel="noopener noreferrer">
-                    <img src="https://cdn.simpleicons.org/telegram" width="24" height="24" alt="Telegram">
+                    <img src="https://cdn.simpleicons.org/telegram/black" width="24" height="24" alt="Telegram">
                 </a>
             </div>
         </div>
