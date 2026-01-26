@@ -1,0 +1,76 @@
+:root {
+  --bg: #ffffff;
+  --text: #333333;
+  --link: #007acc;
+  --border: #eaeaea;
+  --icon-filter: none;
+
+  --pink-fg: #d6336c;
+  --pink-bg: #ffd1dc;
+  --blue-fg: #005fa3;
+  --blue-bg: #c1e3ff;
+  --green-fg: #007d32;
+  --green-bg: #c1f0c8;
+  --purple-fg: #5f33e1;
+  --purple-bg: #e0d7ff;
+  --yellow-fg: #856404;
+  --yellow-bg: #fff2cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1a1a;
+    --text: #e0e0e0;
+    --link: #4db8ff;
+    --border: #333333;
+    --icon-filter: invert(1);
+
+    --pink-fg: #ff8fa3;
+    --pink-bg: #5a2d36;
+    --blue-fg: #80caff;
+    --blue-bg: #1a3a5a;
+    --green-fg: #8df0a5;
+    --green-bg: #1a4a2a;
+    --purple-fg: #b388eb;
+    --purple-bg: #3a2a5a;
+    --yellow-fg: #fde68a;
+    --yellow-bg: #4a401a;
+  }
+}
+
+.聚焦 {
+  font-weight: bold;
+  color: var(--yellow-fg);
+}
+.不是 {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.m-pink {
+  color: var(--pink-fg);
+}
+.bg-pink {
+  background: linear-gradient(transparent 60%, var(--pink-bg) 0);
+  padding: 0 2px;
+}
+
+.m-blue {
+  color: var(--blue-fg);
+}
+.bg-blue {
+  background: linear-gradient(transparent 60%, var(--blue-bg) 0);
+  padding: 0 2px;
+}
+
+.m-purple {
+  color: var(--purple-fg);
+}
+.bg-purple {
+  background: linear-gradient(transparent 60%, var(--purple-bg) 0);
+  padding: 0 2px;
+}
+
+.wavy {
+  text-decoration: underline wavy var(--blue-fg);
+}
